@@ -351,7 +351,12 @@ let cartToastTimer=null;
 function showCartToast(product){
   const toast=document.getElementById("cartToast");
   if(!toast)return;
+  const cartItem=cart.find(x=>x.id===product?.id);
+  const qty=Math.max(1,Number(cartItem?.qty)||1);
+  const price=displayPrice(product||{});
   toast.querySelector("[data-toast-name]").textContent=product?.name||"Produkt";
+  const meta=toast.querySelector("[data-toast-meta]");
+  if(meta)meta.textContent=`${price} · ${qty} ${qty===1?"stk.":"stk."}`;
   toast.classList.remove("hidden");
   clearTimeout(cartToastTimer);
   cartToastTimer=setTimeout(()=>toast.classList.add("hidden"),2000);

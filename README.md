@@ -1,9 +1,9 @@
-# Cooper Supply ZV8.3.1.1
+# Cooper Supply ZV8.3.2
 
 ZV8.2 is a follow-up commerce/UX patch built directly on the ZV8.1 baseline. Existing Klarna Playground, Stripe Test, server-side payment validation, Stripe webhook and fitment system are retained.
 
 
-## ZV8.3.1.1
+## ZV8.3.2
 - Handlekurv-popup har direkte `TIL BETALING` i tillegg til `SE HANDLEKURV`.
 - Kundegrensesnittet bruker `BESTILLING` og norsk terminologi der det er naturlig.
 - Checkout-produktinformasjon bruker `KOMPATIBILITET` og oversetter kjente demo-tekster til norsk.

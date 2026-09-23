@@ -262,3 +262,13 @@ footer{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;padding:50px 
 @media(max-width:520px){
   .cartToast{width:min(340px,calc(100vw - 24px));right:12px;}
 }
+
+
+/* ZV8.3.2 — visual polish and cart toast detail */
+.hero h1{ text-indent:-0.12em; }
+.showcaseCopy h2,.showcasePageCopy h1{ text-indent:-0.10em; }
+.catalogSelectorForm{ gap:18px; }
+.catalogSelectorForm label,.catalogRegSection label{ gap:10px; }
+.checkoutTop .eyebrow{ margin-bottom:18px; }
+.checkoutTop h1{ margin-bottom:10px; }
+.cartToastMeta{ display:block; color:#aeb9b3; font-size:10px; margin-top:4px; }
