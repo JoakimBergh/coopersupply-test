@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Cooper Supply — norske spesialdeler og performance-produkter for MINI R-serien.">
+<title>Cooper Supply — Deler & Performance til MINI R-serien</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="announcement">🇳🇴 Norsk spesialbutikk <span>•</span> Deler & performance til MINI R-serien <span>•</span> R50–R61</div>
+
+<header class="header">
+  <a class="brand" href="/" aria-label="Cooper Supply hjem">
+    <strong>COOPER<span>SUPPLY</span></strong><small>MINI R-SERIES PARTS &amp; PERFORMANCE</small>
+  </a>
+  <button id="mobileNavToggle" class="mobileNavToggle" type="button" aria-label="Åpne meny" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+  <nav id="mainNav">
+    <a href="/">Hjem</a>
+    <a href="/shop">Nettbutikk</a>
+    <a href="/showcase">Showcase</a>
+    <a href="/about">Om oss</a>
+    <a href="/contact">Kontakt</a>
+  </nav>
+  <div class="actions">
+    <button id="searchBtn" title="Søk">⌕</button>
+    <button id="cartBtn" title="Handlekurv">🛒 <b id="cartCount">0</b></button>
+  </div>
+</header>
+
+<main id="top" class="appMain">
+<div id="routeView" class="routeView hidden"></div>
+<div class="heroTrust">
+<section class="hero">
+  <div class="heroCopy">
+    <div class="eyebrow">R50 · R52 · R53 · R55 · R56 · R57 · R58 · R59 · R60 · R61</div>
+    <h1><span>COOPER</span><em>SUPPLY.</em></h1>
+    <p>Spesialtilpassede ettermarkedsdeler for MINI R-serien.</p>
+    <div class="heroButtons">
+      <a class="btn primary" href="/shop">HANDLE DELER →</a>
+    </div>
+  </div>
+  <div class="heroFinder">
+    <div class="vehicleCopy">
+      <h2>FINN DIN MINI</h2>
+      <p>Velg MINI, årsmodell og motor/variant.</p>
+    </div>
+    <form id="fitmentForm" class="plateForm">
+      <label class="regLookupLabel" for="regNumber">REGISTRERINGSNUMMER</label>
+      <div class="regLookup">
+        <input id="regNumber" name="regNumber" inputmode="text" autocomplete="off" placeholder="AB12345" maxlength="8">
+        <button class="btn secondary regLookupBtn" type="button" id="regLookupBtn">FINN →</button>
+      </div>
+      <button id="manualFitmentToggle" class="manualToggle" type="button" aria-expanded="false">VELG MANUELT</button>
+      <div id="manualFitment" class="manualFitment hidden">
+        <div class="fitmentFields">
+          <label>MODELL<select id="fitModel"><option value="">Velg modell</option></select></label>
+          <label>ÅR<select id="fitYear"><option value="">Velg år</option></select></label>
+          <label>MOTOR / VARIANT<select id="fitEngine"><option value="">Velg motor / variant</option></select></label>
+          <label id="drivetrainField" class="conditionalField hidden">DRIVLINJE<select id="fitDrivetrain"></select></label>
+          <label id="transmissionField" class="conditionalField hidden">GIRKASSE<select id="fitTransmission"></select></label>
+        </div>
+        <button class="btn primary" type="submit">VIS DELER SOM PASSER →</button>
+      </div>
+      <div id="fitVehicleData"></div>
+      <button id="resetFitment" class="resetVehicle hidden" type="button">NULLSTILL BILVALG</button>
+      <div id="fitmentStatus" class="plateStatus" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<section class="trust">
+  <div><b>MINI R-SERIES SPESIALIST</b><small>Deler, styling og performance for R50–R61.</small></div>
+  <div><b>DELER VI SELV VILLE MONTERT</b><small>Vi velger produkter vi selv ville brukt på våre egne biler.</small></div>
+  <div><b>TESTET I PRAKSIS</b><small>Vi legger vekt på hvordan produktene faktisk fungerer på ekte biler.</small></div>
+  <div><b>NORSK BUTIKK</b><small>Norsk kundeservice, norske kjøpsvilkår og lokal oppfølging.</small></div>
+</section>
+</div>
+
+
+
+
+
+
+
+
+
+<section id="products" class="section productsSection">
+  <div class="sectionHead">
+    <div><span class="eyebrow">KATALOG</span><h2>PRODUKTER</h2></div>
+    <div class="filters">
+      <button class="filter active" data-filter="all">Alle</button>
+    </div>
+  </div>
+  <div class="fitmentBar shopVehicleProfile" id="shopVehicleProfile">
+    <div class="shopProfileMain"><small>DIN MINI</small><strong id="fitmentSelection">Ingen MINI valgt</strong></div>
+    <div class="shopProfileActions"><button id="shopVehicleAction" class="shopProfileAction" type="button">VELG DIN MINI →</button><button id="shopVehicleReset" class="shopProfileReset hidden" type="button">NULLSTILL VALG</button></div>
+    <span id="productCount" class="productCount">0 produkter</span>
+  </div>
+  <div id="categoryFilters" class="categoryFilters"></div>
+  <div id="productGrid" class="productGrid"></div>
+      <button id="loadMoreProducts" class="btn secondary loadMore hidden" type="button">Vis flere</button>
+</section>
+
+<section id="showcase" class="showcase">
+  <div class="showcaseImage"><img src="/assets/showcase/r53-showcase.jpg" alt="Cooper Supply R53 showcasebil" loading="lazy"></div>
+  <div class="showcaseCopy">
+    <span class="eyebrow">THE COOPER SUPPLY R53</span>
+    <h2><span>BYGGET FOR Å</span><span>TESTE DELENE.</span></h2>
+    <p>Dette er vår 2002 MINI Cooper S R53 — bilen vi bruker som showcase og testplattform for Cooper Supply.</p>
+    <a class="btn primary" href="/shop">SE DELER →</a>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div><span class="eyebrow">OM COOPER SUPPLY</span><h2>R-SERIEN<br>SPESIALIST.</h2></div>
+  <div><p>Cooper Supply er en norsk spesialbutikk for ettermarkedsdeler til MINI R-serien. Vi bygger butikken rundt nyttige produkter, tydelig fitment-informasjon og en katalog som kan vokse fra innkjøpte produkter til egne Cooper Supply-produkter.</p><p>MINI-modellnavn brukes kun beskrivende for kompatibilitet. Cooper Supply er vårt eget merkenavn.</p></div>
+</section>
+
+
+
+<section class="newsletter">
+  <div><span class="eyebrow">HOLD DEG OPPDATERT</span><h2>NYE DELER. NYE BYGG.</h2><p>Få beskjed når nye produkter og MINI-relatert innhold blir lagt til.</p></div>
+  <form onsubmit="event.preventDefault();this.querySelector('button').textContent='THANK YOU ✓'"><input type="email" required placeholder="deg@epost.no"><button class="btn primary">MELD MEG PÅ</button></form>
+</section>
+</main>
+
+<footer id="contact">
+  <div><a class="brand" href="/"><strong>COOPER<span>SUPPLY</span></strong><small>MINI R-SERIES PARTS &amp; PERFORMANCE</small></a><p>Spesialist på ettermarkedsdeler og performance til MINI R-serien.</p></div>
+  <div><b>KUNDESERVICE</b><a href="/about">Om oss</a><a href="/contact">Kontakt</a><a href="#" data-info="shipping">Frakt og levering</a><a href="#" data-info="returns">Retur og bytte</a></div>
+    <div><b>KUNDEINFORMASJON</b><a href="#" data-info="terms">Salgsbetingelser</a><a href="#" data-info="privacy">Personvern</a><a href="#" data-info="cookies">Informasjonskapsler</a><a href="#" data-info="warranty">Garanti</a><a href="#" data-info="compatibility">Kompatibilitet</a><a href="#" data-info="withdrawal">Angrerett</a><a href="#" data-info="complaints">Reklamasjon</a></div>
+</footer>
+
+<div id="searchPanel" class="overlay hidden">
+  <div class="modal"><button class="close" data-close="searchPanel">×</button><h3>Søk i Cooper Supply</h3><input id="searchInput" placeholder="f.eks. R53 eksos, felger eller lys"><div id="searchResults"></div></div>
+</div>
+<div id="productDetailPanel" class="overlay hidden"><div class="modal"><button class="close" data-close="productDetailPanel">×</button><div id="productDetailBody"></div></div></div>
+<div id="cartPanel" class="overlay hidden">
+  <div class="modal"><button class="close" data-close="cartPanel">×</button><h3>Handlekurv</h3><div id="cartItems"></div><div class="cartActions"><button type="button" class="btn secondary full" data-cart-clear>TØM HANDLEKURV</button><a class="btn primary full cartCheckout" href="/checkout">TIL BETALING →</a></div><div class="cartTotal">Totalt <strong id="cartTotal">0,-</strong></div><p class="cartNote">Betaling håndteres sikkert via Klarna. Testbetaling bruker Klarna Playground.</p></div>
+</div>
+<div id="catalogSelectorPanel" class="overlay hidden">
+  <div class="modal catalogSelectorModal"><button class="close" id="catalogSelectorClose" type="button">×</button><span class="eyebrow">DIN MINI</span><h3>FINN DIN MINI</h3><p class="catalogSelectorLead">Velg modellen du handler deler til. Resultatene i katalogen oppdateres direkte.</p><form id="catalogFitmentForm" class="catalogSelectorForm">
+    <div id="catalogManualSection">
+      <label>MODELL<select id="catalogFitModel"><option value="">Velg modell</option></select></label>
+      <label>ÅR<select id="catalogFitYear" disabled><option value="">Velg år</option></select></label>
+      <label>MOTOR / VARIANT<select id="catalogFitEngine" disabled><option value="">Velg motor / variant</option></select></label>
+      <label id="catalogFitDrivetrainField" class="hidden">DRIVLINJE<select id="catalogFitDrivetrain"><option value="">Velg drivlinje</option></select></label>
+      <label id="catalogFitTransmissionField" class="hidden">GIRKASSE<select id="catalogFitTransmission"><option value="">Velg girkasse</option></select></label>
+      <div id="catalogRegSection" class="catalogRegSection hidden">
+        <label>REGISTRERINGSNUMMER<input id="catalogRegNumber" name="catalogRegNumber" inputmode="text" autocomplete="off" placeholder="AB12345" maxlength="8"></label>
+      </div>
+      <div id="catalogVehicleData"></div>
+      <div id="catalogSelectorStatus" class="formStatus"></div>
+      <button class="btn primary full" type="submit">VIS DELER SOM PASSER →</button>
+      <button class="btn secondary full catalogAltButton" id="catalogRegToggle" type="button" aria-expanded="false">VELG MED REG. NR</button>
+    </div>
+  </form></div>
+</div>
+
+<div id="cartToast" class="cartToast hidden" role="status" aria-live="polite"><div class="cartToastInfo"><small>LAGT I HANDLEKURV</small><strong data-toast-name>Produkt</strong></div><div class="cartToastActions"><button type="button" data-toast-cart>SE HANDLEKURV</button><a href="/checkout" class="cartToastCheckout">TIL BETALING →</a></div></div>
+
+<div id="infoPanel" class="overlay hidden">
+  <div class="modal legalModal">
+    <button class="close" data-close="infoPanel">×</button>
+    <div id="infoPanelBody"></div>
+  </div>
+</div>
+<script src="/catalog.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
