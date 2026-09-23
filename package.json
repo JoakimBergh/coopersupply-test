@@ -1,8 +1,8 @@
 {
   "name": "cooper-supply-zv8",
-  "version": "8.3.0",
+  "version": "8.3.3",
   "private": true,
-  "description": "Cooper Supply ZV8.3 — checkout UX, Norwegian customer-facing terminology and cart flow polish",
+  "description": "Cooper Supply ZV8.3.3 — catalog selector label spacing polish",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js"
